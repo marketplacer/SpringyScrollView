@@ -19,7 +19,7 @@ class ViewController: UIViewController,
   // ------------
   
   func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 1000
+    return 200
   }
   
   func collectionView(collectionView: UICollectionView,
