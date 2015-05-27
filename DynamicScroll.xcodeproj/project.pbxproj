@@ -17,6 +17,7 @@
 		7EBB44271B16852D0015EBCC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB44261B16852D0015EBCC /* CollectionViewCell.swift */; };
 		7EBB442C1B1685870015EBCC /* iiColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB442B1B1685870015EBCC /* iiColor.swift */; };
 		7EBB442E1B16860B0015EBCC /* iiRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB442D1B16860B0015EBCC /* iiRandom.swift */; };
+		7EBB44301B1687760015EBCC /* SpringyFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBB442F1B1687760015EBCC /* SpringyFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		7EBB44261B16852D0015EBCC /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		7EBB442B1B1685870015EBCC /* iiColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iiColor.swift; sourceTree = "<group>"; };
 		7EBB442D1B16860B0015EBCC /* iiRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iiRandom.swift; sourceTree = "<group>"; };
+		7EBB442F1B1687760015EBCC /* SpringyFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringyFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				7EBB44241B1684D60015EBCC /* AppConstants.swift */,
 				7EBB44041B1682710015EBCC /* AppDelegate.swift */,
 				7EBB44261B16852D0015EBCC /* CollectionViewCell.swift */,
+				7EBB442F1B1687760015EBCC /* SpringyFlowLayout.swift */,
 				7EBB44061B1682710015EBCC /* ViewController.swift */,
 				7EBB44081B1682710015EBCC /* Main.storyboard */,
 				7EBB440B1B1682710015EBCC /* Images.xcassets */,
@@ -234,6 +237,7 @@
 			files = (
 				7EBB44251B1684D60015EBCC /* AppConstants.swift in Sources */,
 				7EBB44071B1682710015EBCC /* ViewController.swift in Sources */,
+				7EBB44301B1687760015EBCC /* SpringyFlowLayout.swift in Sources */,
 				7EBB44271B16852D0015EBCC /* CollectionViewCell.swift in Sources */,
 				7EBB44051B1682710015EBCC /* AppDelegate.swift in Sources */,
 				7EBB442E1B16860B0015EBCC /* iiRandom.swift in Sources */,
