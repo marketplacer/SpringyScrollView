@@ -179,6 +179,7 @@
 		7EBB43F71B1682710015EBCC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Marketplacer;
 				TargetAttributes = {
@@ -439,6 +440,7 @@
 				7EBB44201B1682710015EBCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EBB44211B1682710015EBCC /* Build configuration list for PBXNativeTarget "DynamicScrollTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +449,7 @@
 				7EBB44231B1682710015EBCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

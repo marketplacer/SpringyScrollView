@@ -11,6 +11,7 @@ class SpringyFlowLayout: UICollectionViewFlowLayout {
   
   func changeItemSize(width: CGFloat) {
     itemSize = CGSize(width: width, height: AppConstants.itemHeight)
+    dynamicAnimator = nil
   }
   
   override func prepareLayout() {
@@ -23,12 +24,10 @@ class SpringyFlowLayout: UICollectionViewFlowLayout {
     dynamicAnimator = UIDynamicAnimator(collectionViewLayout: self)
     
     let contentSize = collectionViewContentSize()
-
-    let items = super.layoutAttributesForElementsInRect(
-      CGRect(x: 0, y: 0, width: contentSize.width, height: contentSize.height))
-      as? [UICollectionViewLayoutAttributes]
     
-    if let items = items {
+    if let items = super.layoutAttributesForElementsInRect(
+      CGRect(x: 0, y: 0, width: contentSize.width, height: contentSize.height)) {
+        
       for item in items {
         let spring = UIAttachmentBehavior(item: item, attachedToAnchor: item.center)
         spring.length = 0
@@ -39,12 +38,12 @@ class SpringyFlowLayout: UICollectionViewFlowLayout {
     }
   }
 
-  override func layoutAttributesForElementsInRect(rect: CGRect) -> [AnyObject]? {
-    return dynamicAnimator?.itemsInRect(rect) ?? super.layoutAttributesForElementsInRect(rect)
+  override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+    return dynamicAnimator?.itemsInRect(rect) as? [UICollectionViewLayoutAttributes] ??
+      super.layoutAttributesForElementsInRect(rect)
   }
 
-  override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes! {
-    
+  override func layoutAttributesForItemAtIndexPath(indexPath: NSIndexPath) -> UICollectionViewLayoutAttributes? {
     return dynamicAnimator?.layoutAttributesForCellAtIndexPath(indexPath) ??
       super.layoutAttributesForItemAtIndexPath(indexPath)
   }
@@ -52,7 +51,7 @@ class SpringyFlowLayout: UICollectionViewFlowLayout {
   override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
     if let collectionView = collectionView,
       dynamicAnimator = dynamicAnimator {
-      var delta =  newBounds.origin.y - collectionView.bounds.origin.y
+      let delta =  newBounds.origin.y - collectionView.bounds.origin.y
         
       let touchLocation = collectionView.panGestureRecognizer.locationInView(collectionView)
         
