@@ -1,4 +1,4 @@
-# Implementing collection view with springy effect with UIKit Dynamics in iOS / Swift
+# Implementing collection view with springy effect using UIKit Dynamics in iOS / Swift
 
 This is a demo iOS showing how to do the bouncy scroll effect with a collection view. This is a swift implementatino of the demo that was shown in the WWDC 2013 video "Exploring Scroll Views on iOS 7".
 
