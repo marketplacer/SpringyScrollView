@@ -4,5 +4,5 @@ This is a demo iOS app that shows how to do the bouncy scroll effect with a coll
 
 https://developer.apple.com/videos/wwdc/2013/#217
 
-<img src='https://raw.githubusercontent.com/exchangegroup/SpringyScrollView/master/Graphics/DynamicSpringyScroll_iOS_swift.gif' alt='Using UIKit Dynamics for spring scroll effect in iOS / swift'>
+<img src='https://raw.githubusercontent.com/marketplacer/SpringyScrollView/master/Graphics/DynamicSpringyScroll_iOS_swift.gif' alt='Using UIKit Dynamics for spring scroll effect in iOS / swift'>
 
